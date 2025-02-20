@@ -3,8 +3,12 @@ import { useColorMode } from '@docusaurus/theme-common';
 import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
 import React from 'react';
 
+
+
 import DocSearchLogo from './DocSearchLogo';
 import showcaseProjects from './showcase-projects.json';
+
+
 
 function Home() {
   const { withBaseUrl } = useBaseUrlUtils();
@@ -46,141 +50,105 @@ function Home() {
   function Description() {
     return (
       <>
-        {/* Showcase */}
-        <div className="py-16 overflow-hidden">
-          <div className="relative max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl">
-            <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8">
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl leading-9 font-extrabold md:text-4xl md:leading-10">
-                  Already trusted by your favorite docs
-                </h2>
-              </div>
-            </div>
-            <div className="pt-4 pb-12 md:pb-16">
-              <div className="relative">
-                <div className="relative max-w-screen-xl mx-auto px-4 lg:px-6">
-                  <div className="max-w-4xl mx-auto">
-                    <dl className="rounded-lg shadow-xl lg:grid lg:grid-cols-3 showcase">
-                      <div className="flex flex-col border-b p-6 text-center lg:border-0 showcase-border">
-                        <dt className="order-2 mt-2 text-lg leading-6 font-medium text-description" id="item-1">
-                          Free Service
-                        </dt>
-                        <dd
-                          className="order-1 text-5xl leading-none font-extrabold text-algolia"
-                          aria-describedby="item-1"
-                        >
-                          100%
-                        </dd>
-                      </div>
-                      <div className="flex flex-col border-t border-b p-6 text-center lg:border-0 lg:border-l showcase-border">
-                        <dt className="order-2 mt-2 text-lg leading-6 font-medium text-description">
-                          Searches per month
-                        </dt>
-                        <dd className="order-1 text-5xl leading-none font-extrabold text-algolia">+170M</dd>
-                      </div>
-                      <div className="flex flex-col border-t p-6 text-center lg:border-0 lg:border-l showcase-border">
-                        <dt className="order-2 mt-2 text-lg leading-6 font-medium text-description">DocSearch Live</dt>
-                        <dd className="order-1 text-5xl leading-none font-extrabold text-algolia">+7000</dd>
-                      </div>
-                    </dl>
-                  </div>
-                </div>
-              </div>
-            </div>
-           
-          </div>
+      <div className="h-[60vh] flex items-start py-0 overflow-hidden">
+  <div className="relative max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl w-full">
+    
+    {/* Description */}
+    <div className="pb-4 overflow-hidden">
+      <div className="relative max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl">
+        <div className="relative">
+          <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight md:text-4xl md:leading-10">
+            Solve docs challenges with a search engine
+          </h3>
+          <p className="mt-2 max-w-3xl mx-auto text-center text-xl leading-7 text-description">
+            Docs are only helpful when your users can find answers easily. Enter DocSearch.
+          </p>
         </div>
+      </div>
+    </div>
 
-        {/* Description */}
-        <div className="py-16 overflow-hidden">
-          <div className="relative max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl">
-            <div className="relative">
-              <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight md:text-4xl md:leading-10">
-                Solve docs challenges with a search engine
-              </h3>
-              <p className="mt-4 max-w-3xl mx-auto text-center text-xl leading-7 text-description">
-                Docs are only helpful when your users can find answers easily. Enter DocSearch.
-              </p>
-            </div>
-
-            <div className="pt-16">
-              <ul className="lg:grid lg:grid-cols-3 lg:col-gap-8 lg:row-gap-10">
-                <li>
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-algolia text-white">
-                        <svg viewBox="0 0 20 20" fill="currentColor" className="search w-6 h-6">
-                          <path
-                            fillRule="evenodd"
-                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                            clipRule="evenodd"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <h4 className="text-lg leading-6 font-medium">Made for Developer docs</h4>
-                      <p className="mt-2 text-base leading-6 text-description">
-                        Initially created to fulfill our own documentation needs, DocSearch eventually became a
-                        community project for open source docs. But, now it is available for any/all kinds of developer
-                        documentation.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li className="mt-10 lg:mt-0">
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-algolia text-white">
-                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="user-group w-6 h-6">
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <h4 className="text-lg leading-6 font-medium">Customizable and fast</h4>
-                      <p className="mt-2 text-base leading-6 text-description">
-                        DocSearch understands how the user input fits into the context of your project and instantly
-                        presents the most relevant content with fewer interactions than any other method.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li className="mt-10 lg:mt-0">
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-algolia text-white">
-                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="device-mobile w-6 h-6">
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <h4 className="text-lg leading-6 font-medium">Mobile design</h4>
-                      <p className="mt-2 text-base leading-6 text-description">
-                        With a design very close to the native experience on mobile, we leverage users acquaintance with
-                        the interaction patterns of each OS.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+    {/* Cards */}
+    <div className="pt-6 pb-12">
+  <ul className="lg:grid lg:grid-cols-4 lg:gap-12 grid grid-cols-1 gap-8"> {/* Aumentei o gap para 12 em telas grandes e 8 para telas menores */}
+    <li>
+      <div className="flex justify-center">
+        <div
+          className="max-w-xs w-full bg-transparent border-2 border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-blue-800 hover:text-blue-800 cursor-pointer transition-colors duration-300"
+          onClick={() => {
+            document.getElementById('how-it-works').scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
+          <h4 className="text-2xl leading-8 font-medium text-white mt-4">Context</h4>
         </div>
+      </div>
+    </li>
+    <li>
+      <div className="flex justify-center">
+        <div
+          className="max-w-xs w-full bg-transparent border-2 border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-blue-800 hover:text-blue-800 cursor-pointer transition-colors duration-300"
+          onClick={() => {
+            document.getElementById('timeline-doc').scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
+          <h4 className="text-2xl leading-8 font-medium text-white mt-4">Timeline</h4>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div className="flex justify-center">
+        <div
+          className="max-w-xs w-full bg-transparent border-2 border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-blue-800 hover:text-blue-800 cursor-pointer transition-colors duration-300"
+          onClick={() => {
+            document.getElementById('presentations-doc').scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
+          <h4 className="text-2xl leading-8 font-medium text-white mt-4">Presentations</h4>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div className="flex justify-center">
+        <div
+          className="max-w-xs w-full bg-transparent border-2 border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-blue-800 hover:text-blue-800 cursor-pointer transition-colors duration-300"
+          onClick={() => {
+            document.getElementById('integrantes-doc').scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
+          <h4 className="text-2xl leading-8 font-medium text-white mt-4">Integrantes</h4>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+    {/* Scroll Down Button */}
+    <div className="flex justify-center mt-6">
+      <a
+        href="#"
+        className="text-2xl text-blue-500 hover:text-blue-700 cursor-pointer"
+        onClick={(e) => {
+          e.preventDefault();
+          window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+        }}
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8 animate-bounce">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7 7 7-7"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
 
         {/* How it works */}
-        <div className="diagonal-box py-16 bg-gray-200 overflow-hidden">
+        <div id="how-it-works" className="diagonal-box py-16 bg-gray-200 overflow-hidden">
           <div className="diagonal-content max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl">
             <div className="max-w-screen-xl mx-auto pt-6 px-4 md:px-6 lg:px-8">
               <div className="max-w-4xl mx-auto text-center">
@@ -262,7 +230,7 @@ function Home() {
         </div>
 
         {/* Anatomy of DocSearch */}
-        <div className="py-16 overflow-hidden lg:py-24">
+        <div id='timeline-doc' className="py-16 overflow-hidden lg:py-24">
           <div className="relative max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl">
             <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
               <div className="relative">
@@ -414,10 +382,10 @@ function Home() {
         </div>
 
         {/* Powered by Algolia */}
-        <div className="py-16 bg-algolia overflow-hidden lg:py-24">
+        <div id='presentations-doc' className="py-16 bg-algolia overflow-hidden lg:py-24">
           <div className="text-center">
             <h3 className="mt-2 text-3xl leading-8 font-extrabold text-white tracking-tight md:text-4xl md:leading-10">
-              Powered by Algolia
+              Presentations
             </h3>
           </div>
           <div className="relative max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl">
@@ -530,78 +498,133 @@ function Home() {
         </div>
 
         {/* Accessibility */}
-        <div className="py-16 lg:py-24">
-          <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8">
-            <div className="text-center">
-              <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight md:text-4xl md:leading-10">
-                It's all about keyboards
-              </h3>
-              <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-description lg:mx-auto">
-                Once users become familiar with a system they will become better and faster at doing what they need to.
-                DocSearch offers accelerators to experts.
-              </p>
-              <div className="pt-12 items-center justify-center flex">
-                <img
-                  className="w-full max-w-4xl image-rendering-pixel"
-                  src={withBaseUrl('img/assets/keyboard.png')}
-                  alt="keyboard-shortcuts"
-                />
-              </div>
-            </div>
 
-            <div className="pt-16 w-5/6 mx-auto">
-              <ul className="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-                <li>
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-algolia text-white">
-                        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <h4 className="text-lg leading-6 font-medium">Keyboard Shortcut & Navigation</h4>
-                      <p className="mt-2 text-base leading-6 text-description">
-                        We aim at keeping the experience as smooth as your interaction with an IDE, which explains the
-                        Ctrl+K (⌘+K on macOS) keyboard shortcut to open the search modal.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li className="mt-10 md:mt-0">
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-algolia text-white">
-                        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <h4 className="text-lg leading-6 font-medium">Accessibility</h4>
-                      <p className="mt-2 text-base leading-6 text-description">
-                        We have released this version with our best efforts on addressing accessibility issues and we
-                        are willing to make further changes. We'd like to work closely with an expert in accessibility.
-                        Please contact us if you are interested.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+<div id="integrantes-doc" className="py-16 lg:py-24">
+  <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8">
+    <div className="text-center">
+      <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight md:text-4xl md:leading-10">
+        Integrantes
+      </h3>
+      <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-description lg:mx-auto">
+        Meet the team behind this project. We're a group of 5 students and 2 professors, working together to make it happen.
+      </p>
+    </div>
+
+    {/* Cards de Integrantes */}
+    <div className="pt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+
+      {/* Card de Integrante 1 - Bruno */}
+      <div className="bg-white border border-gray-300 rounded-lg shadow-xl p-6 transform transition-transform hover:scale-105">
+        <div className="flex justify-center mb-4">
+          <img
+            className="h-32 w-32 rounded-full object-cover border-4 border-blue-500"
+            src={withBaseUrl('/img/assets/bruno.jpg')}
+            alt="Bruno Tavares"
+          />
         </div>
+        <div className="text-center"> {/* Centraliza o conteúdo */}
+          <h4 className="text-xl font-semibold text-gray-900">Bruno Tavares</h4>
+          <p className="mt-2 text-base text-gray-600">Aluno</p>
+        </div>
+      </div>
+
+      {/* Card de Integrante 2 - Diogo */}
+      <div className="bg-white border border-gray-300 rounded-lg shadow-xl p-6 transform transition-transform hover:scale-105">
+        <div className="flex justify-center mb-4">
+          <img
+            className="h-32 w-32 rounded-full object-cover border-4 border-blue-500"
+            src={withBaseUrl('/img/assets/diogo.jpg')}
+            alt="Diogo Costa"
+          />
+        </div>
+        <div className="text-center"> {/* Centraliza o conteúdo */}
+          <h4 className="text-xl font-semibold text-gray-900">Diogo Costa</h4>
+          <p className="mt-2 text-base text-gray-600">Aluno</p>
+        </div>
+      </div>
+
+      {/* Card de Integrante 3 - André */}
+      <div className="bg-white border border-gray-300 rounded-lg shadow-xl p-6 transform transition-transform hover:scale-105">
+        <div className="flex justify-center mb-4">
+          <img
+            className="h-32 w-32 rounded-full object-cover border-4 border-blue-500"
+            src={withBaseUrl('/img/assets/andre.jpg')}
+            alt="André Alves"
+          />
+        </div>
+        <div className="text-center"> {/* Centraliza o conteúdo */}
+          <h4 className="text-xl font-semibold text-gray-900">André Alves</h4>
+          <p className="mt-2 text-base text-gray-600">Aluno</p>
+        </div>
+      </div>
+
+      {/* Card de Integrante 4 - Chicão */}
+      <div className="bg-white border border-gray-300 rounded-lg shadow-xl p-6 transform transition-transform hover:scale-105">
+        <div className="flex justify-center mb-4">
+          <img
+            className="h-32 w-32 rounded-full object-cover border-4 border-blue-500"
+            src={withBaseUrl('/img/assets/chicao.jpg')}
+            alt="Francisco Pinto"
+          />
+        </div>
+        <div className="text-center"> {/* Centraliza o conteúdo */}
+          <h4 className="text-xl font-semibold text-gray-900">Francisco Pinto</h4>
+          <p className="mt-2 text-base text-gray-600">Aluno</p>
+        </div>
+      </div>
+
+      {/* Card de Integrante 5 - Rei */}
+      <div className="bg-white border border-gray-300 rounded-lg shadow-xl p-6 transform transition-transform hover:scale-105">
+        <div className="flex justify-center mb-4">
+          <img
+            className="h-32 w-32 rounded-full object-cover border-4 border-blue-500"
+            src={withBaseUrl('/img/assets/rei.JPG')}
+            alt="Pedro Rei"
+          />
+        </div>
+        <div className="text-center"> {/* Centraliza o conteúdo */}
+          <h4 className="text-xl font-semibold text-gray-900">Pedro Rei</h4>
+          <p className="mt-2 text-base text-gray-600">Aluno</p>
+        </div>
+      </div>
+
+      {/* Card de Professor 1 - Joaquim Moreira */}
+      <div className="bg-white border border-gray-300 rounded-lg shadow-xl p-6 transform transition-transform hover:scale-105">
+        <div className="flex justify-center mb-4">
+          <img
+            className="h-32 w-32 rounded-full object-cover border-4 border-blue-500"
+            src="https://static.vecteezy.com/ti/vetor-gratis/p1/14554760-foto-negativa-do-perfil-do-homem-silhueta-anonima-cabeca-humana-empresario-trabalhador-apoio-ilustracaoial-vetor.jpg"
+            alt="Joaquim Moreira"
+          />
+        </div>
+        <div className="text-center"> {/* Centraliza o conteúdo */}
+          <h4 className="text-xl font-semibold text-gray-900">Joaquim Moreira</h4>
+          <p className="mt-2 text-base text-gray-600">Professor</p>
+        </div>
+      </div>
+
+      {/* Card de Professor 2 - Paulo Pintor */}
+      <div className="bg-white border border-gray-300 rounded-lg shadow-xl p-6 transform transition-transform hover:scale-105">
+        <div className="flex justify-center mb-4">
+          <img
+            className="h-32 w-32 rounded-full object-cover border-4 border-blue-500"
+            src="https://static.vecteezy.com/ti/vetor-gratis/p1/14554760-foto-negativa-do-perfil-do-homem-silhueta-anonima-cabeca-humana-empresario-trabalhador-apoio-ilustracaoial-vetor.jpg"
+            alt="Paulo Pintor"
+          />
+        </div>
+        <div className="text-center"> {/* Centraliza o conteúdo */}
+          <h4 className="text-xl font-semibold text-gray-900">Paulo Pintor</h4>
+          <p className="mt-2 text-base text-gray-600">Professor</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
       </>
     );
   }
