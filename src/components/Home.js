@@ -153,8 +153,7 @@ function Home() {
                   Context
                 </h2>
                 <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-                  We scrape your documentation or technical blog, configure the Algolia application and send you the
-                  snippet you'll have to integrate. It's that simple.
+                Our project aims to create a portal where organizations related to maritime port management can publish relevant data, enabling researchers, stakeholders, and decision-makers to access and visualize it from different perspectives
                 </p>
               </div>
             </div>
@@ -173,16 +172,9 @@ function Home() {
                       />
                     </div>
                     <div className="mt-10 lg:mt-0 p-4">
-                      <h5 className="text-lg leading-6 font-medium text-gray-900">1. Scraping</h5>
+                      <h5 className="text-lg leading-6 font-medium text-gray-900">1. Structured Database with Metadata</h5>
                       <p className="mt-2 text-base leading-6 text-gray-600">
-                        We leverage the{' '}
-                        <InlineLink
-                          target="_blank"
-                          href="https://www.algolia.com/products/search-and-discovery/crawler/"
-                        >
-                          Algolia Crawler
-                        </InlineLink>{' '}
-                        to index every section of your website.
+                      Create a well-structured database where each data point includes metadata indicating whether it was generated manually, by a script, or through a machine learning algorithm. This will enable better data filtering during analysis.
                       </p>
                     </div>
                   </div>
@@ -196,10 +188,9 @@ function Home() {
                       />
                     </div>
                     <div>
-                      <h5 className="text-lg leading-6 font-medium text-gray-900">2. Configuration</h5>
+                      <h5 className="text-lg leading-6 font-medium text-gray-900">2. Data Portal Development </h5>
                       <p className="mt-2 text-base leading-6 text-gray-600">
-                        You don't need to configure any settings or even have an Algolia account. We take care of this
-                        for you!
+                      Develop a website/portal for easy data access, allowing users to download data and metadata, view document analysis through charts and tables (dashboard), and track data provenance (manual entry or ML-generated).
                       </p>
                     </div>
                   </div>
@@ -213,10 +204,9 @@ function Home() {
                       />
                     </div>
                     <div>
-                      <h5 className="text-lg leading-6 font-medium text-gray-900">3. Implementation</h5>
+                      <h5 className="text-lg leading-6 font-medium text-gray-900">3. Outlier Detection Mechanism</h5>
                       <p className="mt-2 text-base leading-6 text-gray-600">
-                        We'll send you a small snippet to integrate DocSearch to your website and an invite to your
-                        fully configured Algolia application.
+                      Create a mechanism to detect data inconsistencies (outliers).
                       </p>
                     </div>
                   </div>
