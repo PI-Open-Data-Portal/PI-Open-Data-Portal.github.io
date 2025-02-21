@@ -58,30 +58,21 @@ export default {
       navbar: {
         hideOnScroll: true,
         logo: {
-          alt: 'DocSearch x Algolia',
-          src: 'img/docsearch-x-algolia-logo-light-mode.png',
-          srcDark: 'img/docsearch-x-algolia-logo-dark-mode.png',
-          className: 'docsearch-nav-logo',
+          src: 'img/Nexus_logotipo_white.png',
+          srcDark: 'img/Nexus_logotipo_white.png',
+          width: 150,
+          height: 150,
         },
         items: [
-          // left
+
+          // right
           {
             label: 'Docs',
             to: 'docs/what-is-docsearch',
-            position: 'left',
-          },
-          {
-            label: 'Apply',
-            to: 'apply',
-            position: 'left',
-          },
-          // right
-          {
-            type: 'docsVersionDropdown',
             position: 'right',
           },
           {
-            href: 'https://github.com/algolia/docsearch',
+            href: 'https://github.com/PI-Open-Data-Portal',
             position: 'right',
             className: 'header-github-link',
           },
@@ -105,36 +96,6 @@ export default {
                 label: 'FAQ',
                 to: 'docs/docsearch-program',
               },
-              {
-                label: 'DocSearch v3',
-                to: 'docs/docsearch-v3',
-              },
-            ],
-          },
-          {
-            title: 'DocSearch',
-            items: [
-              {
-                label: 'Apply',
-                to: 'apply',
-              },
-              {
-                label: 'Issues',
-                to: 'https://github.com/algolia/docsearch/issues',
-              },
-              {
-                label: 'Privacy',
-                to: 'https://www.algolia.com/policies/privacy/',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Discord',
-                to: 'https://discord.com/invite/W7kYfh7FKQ',
-              },
             ],
           },
           {
@@ -142,26 +103,38 @@ export default {
             items: [
               {
                 label: 'GitHub',
-                to: 'https://github.com/algolia/docsearch',
+                to: 'https://github.com/PI-Open-Data-Portal',
               },
               {
-                label: 'Twitter',
-                to: 'https://twitter.com/docsearch_',
-              },
-              {
-                label: 'Algolia Blog',
-                to: 'https://algolia.com/blog/',
+                label: 'Repository',
+                to: 'https://github.com/PI-Open-Data-Portal/PI-Open-Data-Portal.github.io',
               },
             ],
           },
+          {
+            title: 'Legal',
+            items: [
+              {
+                label: 'Privacy',
+                to: 'legal/privacy-policy',
+              },
+              {
+                label: 'Terms',
+                to: 'legal/terms-of-service',
+              },
+            ],
+          },
+          {
+            title : 'Open Data Portal',
+            items : [
+              {
+                label : 'Open Data Portal',
+                to : 'https://pi-open-data-portal.github.io/'
+              }
+            ]
+          },
+
         ],
-        logo: {
-          alt: 'Algolia',
-          src: 'img/Algolia-logo-blue.svg',
-          srcDark: 'img/Algolia-logo-white.svg',
-          width: 200,
-        },
-        copyright: 'DocSearch 2015-now • Designed and built by Algolia',
       },
       image: 'img/og_image.png',
       prism: {

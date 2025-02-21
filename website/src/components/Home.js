@@ -28,7 +28,12 @@ function Home() {
         id="hero"
         title={
           <>
-            <DocSearchLogo width="100%" />
+           <div className="flex justify-center items-center mt-[-30px]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-indigo-700 whitespace-nowrap">
+            Nexus - Porto de Sines
+          </h1>
+        </div>
+            
             <span className="hero-title text-3xl leading-9 font-extrabold md:text-3xl lg:text-3xl md:leading-10 max-w-xxs inline-block">
               Open Data Portal
             </span>
@@ -38,10 +43,7 @@ function Home() {
         cta={[
           <Button key="get-started" href={withBaseUrl('docs/what-is-docsearch')}>
             Docs
-          </Button>,
-          <Button key="apply" href={withBaseUrl('apply')} background="blue" color="white" className="apply-button">
-            Apply
-          </Button>,
+          </Button>
         ]}
       />
     );
@@ -50,7 +52,7 @@ function Home() {
   function Description() {
     return (
       <>
-      <div className="h-[60vh] flex items-start py-0 overflow-hidden">
+      <div className="h-[62vh] flex items-start py-0 overflow-hidden">
   <div className="relative max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl w-full">
     
     {/* Description */}
@@ -58,22 +60,21 @@ function Home() {
       <div className="relative max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl">
         <div className="relative">
           <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight md:text-4xl md:leading-10">
-            Solve docs challenges with a search engine
+          Database to support the Open Data Portal.
           </h3>
           <p className="mt-2 max-w-3xl mx-auto text-center text-xl leading-7 text-description">
-            Docs are only helpful when your users can find answers easily. Enter DocSearch.
+          Open Data Portal with Quality Control in Port Management Information Systems
           </p>
         </div>
       </div>
     </div>
 
-    {/* Cards */}
     <div className="pt-6 pb-12">
-  <ul className="lg:grid lg:grid-cols-4 lg:gap-12 grid grid-cols-1 gap-8"> {/* Aumentei o gap para 12 em telas grandes e 8 para telas menores */}
+  <ul className="grid grid-cols-1 gap-8 lg:grid-cols-4 lg:gap-12 md:grid-cols-2">
     <li>
       <div className="flex justify-center">
         <div
-          className="max-w-xs w-full bg-transparent border-2 border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-blue-800 hover:text-blue-800 cursor-pointer transition-colors duration-300"
+          className="max-w-xs w-full bg-indigo-700 border-2 border-indigo-800 dark:border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-indigo-900 hover:bg-indigo-800 hover:text-white cursor-pointer transition-colors duration-300"
           onClick={() => {
             document.getElementById('how-it-works').scrollIntoView({ behavior: 'smooth' });
           }}
@@ -82,10 +83,11 @@ function Home() {
         </div>
       </div>
     </li>
+
     <li>
       <div className="flex justify-center">
         <div
-          className="max-w-xs w-full bg-transparent border-2 border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-blue-800 hover:text-blue-800 cursor-pointer transition-colors duration-300"
+          className="max-w-xs w-full bg-indigo-700 border-2 border-indigo-800 dark:border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-indigo-900 hover:bg-indigo-800 hover:text-white cursor-pointer transition-colors duration-300"
           onClick={() => {
             document.getElementById('timeline-doc').scrollIntoView({ behavior: 'smooth' });
           }}
@@ -94,10 +96,11 @@ function Home() {
         </div>
       </div>
     </li>
+
     <li>
       <div className="flex justify-center">
         <div
-          className="max-w-xs w-full bg-transparent border-2 border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-blue-800 hover:text-blue-800 cursor-pointer transition-colors duration-300"
+          className="max-w-xs w-full bg-indigo-700 border-2 border-indigo-800 dark:border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-indigo-900 hover:bg-indigo-800 hover:text-white cursor-pointer transition-colors duration-300"
           onClick={() => {
             document.getElementById('presentations-doc').scrollIntoView({ behavior: 'smooth' });
           }}
@@ -106,10 +109,11 @@ function Home() {
         </div>
       </div>
     </li>
+
     <li>
       <div className="flex justify-center">
         <div
-          className="max-w-xs w-full bg-transparent border-2 border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-blue-800 hover:text-blue-800 cursor-pointer transition-colors duration-300"
+          className="max-w-xs w-full bg-indigo-700 border-2 border-indigo-800 dark:border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-indigo-900 hover:bg-indigo-800 hover:text-white cursor-pointer transition-colors duration-300"
           onClick={() => {
             document.getElementById('integrantes-doc').scrollIntoView({ behavior: 'smooth' });
           }}
@@ -120,9 +124,6 @@ function Home() {
     </li>
   </ul>
 </div>
-
-
-
 
 
     {/* Scroll Down Button */}
@@ -142,10 +143,6 @@ function Home() {
     </div>
   </div>
 </div>
-
-
-
-
 
         {/* How it works */}
         <div id="how-it-works" className="diagonal-box py-16 bg-gray-200 overflow-hidden">
@@ -381,121 +378,82 @@ function Home() {
           </div>
         </div>
 
-        {/* Powered by Algolia */}
-        <div id='presentations-doc' className="py-16 bg-algolia overflow-hidden lg:py-24">
-          <div className="text-center">
-            <h3 className="mt-2 text-3xl leading-8 font-extrabold text-white tracking-tight md:text-4xl md:leading-10">
-              Presentations
-            </h3>
-          </div>
-          <div className="relative max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl">
-            <div className="relative lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-              <div className="relative">
-                <ul className="mt-10">
-                  <li className="mt-10">
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-white text-algolia">
-                          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="chip w-6 h-6">
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-                            ></path>
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <h5 className="text-lg leading-6 font-medium text-white">Highly efficient</h5>
-                        <p className="mt-2 text-base leading-6 text-gray-300">
-                          Most of our search queries take less than 20ms, so Algolia can run a new search on every
-                          keystroke and instantly highlight relevant content to your users.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="mt-10">
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md  bg-white text-algolia">
-                          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="chat w-6 h-6">
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                            ></path>
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <h5 className="text-lg leading-6 font-medium text-white">Search as you type</h5>
-                        <p className="mt-2 text-base leading-6 text-gray-300">
-                          Instantly magnify relevant content to your users from the first keystroke, thanks to Algolia
-                          speed.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+         {/* Powered by Algolia */}
+         <div id="presentations-doc" className="py-16 bg-algolia overflow-hidden lg:py-24">
+  <div className="text-center">
+    <h3 className="mt-2 text-3xl leading-8 font-extrabold text-white tracking-tight md:text-4xl md:leading-10">
+      Presentations
+    </h3>
+  </div>
+  <div className="relative max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-10">
+      
+      {/* PowerPoint Disponível - Card 1 */}
+      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-pointer transition-all transform hover:scale-105 hover:shadow-xl">
+        {/* Fundo com a imagem do PowerPoint */}
+        <div
+          className="absolute inset-0 bg-cover bg-center transition-transform transform group-hover:scale-110"
+          style={{
+            backgroundImage: "url('/img/assets/ppt1.svg')",  // Imagem do seu PowerPoint
+            height: '100%',
+          }}
+        ></div>
 
-              <div className="relative">
-                <ul className="mt-10">
-                  <li className="mt-10">
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-white text-algolia">
-                          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="backspace w-6 h-6">
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"
-                            ></path>
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <h5 className="text-lg leading-6 font-medium text-white">
-                          Detailed and straightforward analytics
-                        </h5>
-                        <p className="mt-2 text-base leading-6 text-gray-300">
-                          Use our analytics to keep an eye on your search performance and to make sure that your users
-                          are finding what they're searching for.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="mt-10">
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-white text-algolia">
-                          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="chart-bar w-6 h-6">
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                            ></path>
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <h5 className="text-lg leading-6 font-medium text-white">Typo tolerant</h5>
-                        <p className="mt-2 text-base leading-6 text-gray-300">
-                          Algolia knows what your users mean to search for right out-of-the-box, so they won't be
-                          spending time correcting typos.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        {/* Camada de sobreposição para melhorar contraste */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent group-hover:bg-gradient-to-t group-hover:from-black group-hover:to-transparent transition-opacity"></div>
+
+        {/* Conteúdo sobreposto */}
+        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white transition-opacity group-hover:opacity-100 opacity-80">
+          <h5 className="text-2xl font-semibold text-shadow-md">Inception</h5>
+          {/* Novo Layout para o botão */}
+          <a
+            href="https://drive.google.com/file/d/1Cp-nUeyLaDu-xGT2X-eBbS-lp36VTwKH/view?usp=sharing"
+            download
+            className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transform transition-all duration-300 ease-in-out hover:scale-105"
+          >
+            <span className="flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M7 16l4 4 4-4m-4-12v12" />
+              </svg>
+              Download
+            </span>
+          </a>
         </div>
+      </div>
+
+      {/* Coming Soon 1 */}
+      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-not-allowed opacity-60 transition-all transform hover:scale-105 hover:shadow-xl">
+        <div className="absolute inset-0 bg-gray-800"></div>
+        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white">
+          <h5 className="text-2xl font-semibold">Presentation 2</h5>
+          <p className="mt-2 text-sm font-light">Coming Soon</p>
+        </div>
+      </div>
+
+      {/* Coming Soon 2 */}
+      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-not-allowed opacity-60 transition-all transform hover:scale-105 hover:shadow-xl">
+        <div className="absolute inset-0 bg-gray-800"></div>
+        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white">
+          <h5 className="text-2xl font-semibold">Presentation 3</h5>
+          <p className="mt-2 text-sm font-light">Coming Soon</p>
+        </div>
+      </div>
+
+      {/* Coming Soon 3 */}
+      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-not-allowed opacity-60 transition-all transform hover:scale-105 hover:shadow-xl">
+        <div className="absolute inset-0 bg-gray-800"></div>
+        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white">
+          <h5 className="text-2xl font-semibold">Presentation 4</h5>
+          <p className="mt-2 text-sm font-light">Coming Soon</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
 
         {/* Accessibility */}
 
@@ -539,7 +497,7 @@ function Home() {
         </div>
         <div className="text-center"> {/* Centraliza o conteúdo */}
           <h4 className="text-xl font-semibold text-gray-900">Diogo Costa</h4>
-          <p className="mt-2 text-base text-gray-600">Aluno</p>
+          <p className="mt-2 text-base text-gray-600">Aluno</p> 
         </div>
       </div>
 
@@ -588,17 +546,17 @@ function Home() {
         </div>
       </div>
 
-      {/* Card de Professor 1 - Joaquim Moreira */}
+      {/* Card de Professor 1 - José Moreira */}
       <div className="bg-white border border-gray-300 rounded-lg shadow-xl p-6 transform transition-transform hover:scale-105">
         <div className="flex justify-center mb-4">
           <img
             className="h-32 w-32 rounded-full object-cover border-4 border-blue-500"
             src="https://static.vecteezy.com/ti/vetor-gratis/p1/14554760-foto-negativa-do-perfil-do-homem-silhueta-anonima-cabeca-humana-empresario-trabalhador-apoio-ilustracaoial-vetor.jpg"
-            alt="Joaquim Moreira"
+            alt="José Moreira"
           />
         </div>
         <div className="text-center"> {/* Centraliza o conteúdo */}
-          <h4 className="text-xl font-semibold text-gray-900">Joaquim Moreira</h4>
+          <h4 className="text-xl font-semibold text-gray-900">José Moreira</h4>
           <p className="mt-2 text-base text-gray-600">Professor</p>
         </div>
       </div>

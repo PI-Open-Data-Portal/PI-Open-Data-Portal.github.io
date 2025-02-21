@@ -1,32 +1,44 @@
----
-title: What is DocSearch?
-sidebar_label: What is DocSearch?
----
+# What is the Project?
 
-## Why?
+## Overview
 
-We created DocSearch because we are scratching our own itch. As developers, we spend a lot of time reading documentation, and it can be hard to find relevant information in large documentations. We're not blaming anyone here: building good search is a challenge.
+The **Open Data Portal with Quality Control in Port Management Information Systems** is a project focused on creating an accessible platform for maritime port management. The goal of this project is to provide researchers, decision-makers, and other stakeholders with reliable, high-quality, and well-documented data that can be used for data analytics (DA) and machine learning (ML). 
 
-It happens that we are a search company and we actually have a lot of experience building search interfaces. We wanted to use those skills to help others. That's why we created a way to automatically extract content from tech documentation and make it available to everyone from the first keystroke.
+Modern information systems are increasingly data-driven. The trend is to gather data from various organizations undergoing transformations and utilizing it for DA/ML. The trustworthiness of these systems depends on the quality and transparency of the data sources and their transformation processes. This project aims to ensure that the data is transparent, traceable, and of the highest quality by documenting the entire process.
 
-## Quick description
+## Objectives
 
-We split DocSearch into a crawler and a frontend library.
+The key tasks for achieving the goal of this project are as follows:
 
-- Crawls are handled by the [Algolia Crawler][4] and scheduled to run once a week by default, you can then trigger new crawls yourself and monitor them directly from the [Crawler interface][5], which also offers a live editor where you can maintain your config.
-- The frontend library is built on top of [Algolia Autocomplete][6] and provides an immersive search experience through its modal.
+1. **Create a Database for the Open Data Portal:**
+   - The database will store high-quality data and metadata documenting the data’s origin and transformation processes. 
+   - A middleware will be developed to automatically manage data provenance.
 
-## How to feature DocSearch?
+2. **Develop a Platform for Data Access and Distribution:**
+   - The platform will allow users to download data and metadata as files.
+   - It will also allow users to view data in tables and graphs through an intuitive dashboard interface.
 
-DocSearch is entirely free and automated. The one thing we'll need from you is to read [our checklist][2] and apply! After that, we'll share with you the snippet needed to add DocSearch to your website. We ask that you keep the "Search by Algolia" link displayed.
+3. **Implement a Metadata Inspection Module:**
+   - Users can inspect metadata by hovering over data items to get provenance information.
+   - The platform will enable filtering data by source, such as organization or type of data (e.g., user-entered or ML-generated).
 
-DocSearch is [one of our ways][1] to give back to the open source community for everything it did for us already.
+4. **Detect Inconsistencies in the Database:**
+   - Implement methods for detecting inconsistencies, including outlier detection, with links to their respective origin in the database.
 
-You can now [apply to the program][3]
+5. **(Optional) Implement Delta Lake for Data Management:**
+   - To make access to distributed databases more manageable, an abstraction layer using Delta Lake will be created. This will allow for efficient management of relational and NoSQL databases.
 
-[1]: https://opencollective.com/algolia
-[2]: /docs/who-can-apply
-[3]: /apply
-[4]: https://www.algolia.com/products/search-and-discovery/crawler/
-[5]: https://crawler.algolia.com/
-[6]: https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/
+## Case Study
+
+The project will focus on the **Port of Sines Administration’s Port Management Information System (PMIS)**. The aim is to deliver a functional prototype and demonstrate the system with representative use cases.
+
+## Technologies
+
+- **Relational Database**: For storing structured data, technologies such as Microsoft SQL Server or PostgreSQL will be used.
+- **Delta Lake**: A storage layer for managing data in distributed environments, including both relational and NoSQL databases.
+- **Data Visualization**: The platform will present data in a user-friendly manner using tables, graphs, and dashboards.
+
+## Contact Information
+
+- **José Moreira**: jose.moreira@ua.pt
+- **Paulo Pintor**: paulopintor@ua.pt
