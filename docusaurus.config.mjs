@@ -112,24 +112,11 @@ export default {
             ],
           },
           {
-            title: 'Legal',
+            title: 'Open Data Portal',
             items: [
               {
-                label: 'Privacy',
-                to: 'legal/privacy-policy',
-              },
-              {
-                label: 'Terms',
-                to: 'legal/terms-of-service',
-              },
-            ],
-          },
-          {
-            title : 'Open Data Portal',
-            items : [
-              {
-                label : 'Open Data Portal',
-                to : 'https://pi-open-data-portal.github.io/'
+                label: 'Open Data Portal',
+                to: 'https://pi-open-data-portal.github.io/'
               }
             ]
           },
