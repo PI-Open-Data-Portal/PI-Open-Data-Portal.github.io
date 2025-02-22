@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>PI Open Data Portal</ShortName>
+  <Description>Search PI Open Data Portal</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://pi-open-data-portal.github.io/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://pi-open-data-portal.github.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://pi-open-data-portal.github.io/opensearch.xml" />
+  <moz:SearchForm>https://pi-open-data-portal.github.io/</moz:SearchForm>
+</OpenSearchDescription>
