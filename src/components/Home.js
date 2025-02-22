@@ -159,214 +159,252 @@ function Home() {
             </div>
 
             <div className="py-16">
-              <div className="max-w-xl mx-auto px-4 md:px-6 lg:max-w-screen-lg lg:px-8 ">
-                <div className="lg:grid lg:grid-cols-3 lg:gap-8">
-                  <div>
-                    <div className="flex items-center justify-center">
-                      <img
-                        className="h-200"
-                        src={withBaseUrl('img/assets/scraping.svg')}
-                        width="190px"
-                        height="220px"
-                        alt="Scraping with Algolia Crawler"
-                      />
-                    </div>
-                    <div className="mt-10 lg:mt-0 p-4">
-                      <h5 className="text-lg leading-6 font-medium text-gray-900">1. Structured Database with Metadata</h5>
-                      <p className="mt-2 text-base leading-6 text-gray-600">
-                      Create a well-structured database where each data point includes metadata indicating whether it was generated manually, by a script, or through a machine learning algorithm. This will enable better data filtering during analysis.
-                      </p>
-                    </div>
+  <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8">
+    <div className="lg:grid lg:grid-cols-3 lg:gap-16">
+      <div className="text-center">
+        <div className="flex items-center justify-center mb-6">
+          <img
+            className="h-40"
+            src={withBaseUrl('img/assets/basededados.png')} // Nova imagem sobre base de dados
+            width="190px"
+            height="220px"
+            alt="Database structure"
+          />
+        </div>
+        <h5 className="text-xl font-semibold text-gray-900">1. Structured Database with Metadata</h5>
+        <p className="mt-4 text-lg lg:text-xl text-gray-600 max-w-lg mx-auto">
+          Create a well-structured database where each data point includes metadata indicating whether it was generated manually, by a script, or through a machine learning algorithm.
+        </p>
+      </div>
+
+      <div className="text-center">
+        <div className="flex items-center justify-center mb-6">
+          <img
+            className="h-40"
+            src={withBaseUrl('img/assets/frontend.png')} // Nova imagem sobre frontend
+            width="140px"
+            height="220px"
+            alt="Frontend development"
+          />
+        </div>
+        <h5 className="text-xl font-semibold text-gray-900">2. Data Portal Development</h5>
+        <p className="mt-4 text-lg lg:text-xl text-gray-600 max-w-lg mx-auto">
+          Develop a website/portal for easy data access, allowing users to download data and metadata, view document analysis through charts and tables (dashboard), and track data provenance (manual entry or ML-generated).
+        </p>
+      </div>
+
+      <div className="text-center">
+        <div className="flex items-center justify-center mb-6">
+          <img
+            className="h-40"
+            src={withBaseUrl('img/assets/error_fix.png')} // Nova imagem sobre correção de erros
+            width="220px"
+            height="220px"
+            alt="Error detection and correction"
+          />
+        </div>
+        <h5 className="text-xl font-semibold text-gray-900">3. Outlier Detection Mechanism</h5>
+        <p className="mt-4 text-lg lg:text-xl text-gray-600 max-w-lg mx-auto">
+        Develop a robust mechanism to detect and manage data inconsistencies, such as outliers, ensuring higher data accuracy, reliability, and meaningful analysis.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+
+        {/* Timeline Section */}
+<div id="timeline-doc" className="py-24 overflow-hidden lg:py-32">
+  <div className="relative max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+    <div className="relative">
+      <h4 className="text-3xl leading-8 font-extrabold tracking-tight md:text-4xl md:leading-10 text-center mb-24">
+        Project Timeline Overview
+      </h4>
+
+      <div className="relative">
+        {/* Timeline Container */}
+        <div className="flex flex-col gap-36">
+          {/* Initial to M1 Section */}
+          <div className="relative">
+            <div className="flex justify-between items-center">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-green-500 text-white border-2 border-black shadow-lg relative z-10">
+                  <span className="font-bold text-lg">Initial</span>
+                </div>
+              </div>
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-algolia text-white border-2 border-black shadow-lg relative z-10">
+                  <span className="font-bold text-xl">M1</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="absolute top-8 left-16 right-16 h-2 bg-gradient-to-r from-green-500 to-algolia border-2 border-black -translate-y-1/2">
+              <div className="relative h-full">
+                <div className="absolute -top-4 left-1/4 group">
+                  <div className="h-8 w-8 rounded-full bg-green-100 cursor-pointer group-hover:bg-green-200 transition-colors duration-300 border-2 border-black" />
+                  <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
+                    <h6 className="font-semibold text-gray-900">Requirements Analysis</h6>
+                    <p className="text-sm text-gray-600 mt-2">Identify key stakeholders and gather detailed project requirements.</p>
                   </div>
-                  <div className="mt-10 lg:mt-0 p-4">
-                    <div className="h-200 flex items-center justify-center">
-                      <img
-                        src={withBaseUrl('img/assets/configuration.svg')}
-                        width="140px"
-                        height="220px"
-                        alt="Configuration of your crawler"
-                      />
-                    </div>
-                    <div>
-                      <h5 className="text-lg leading-6 font-medium text-gray-900">2. Data Portal Development </h5>
-                      <p className="mt-2 text-base leading-6 text-gray-600">
-                      Develop a website/portal for easy data access, allowing users to download data and metadata, view document analysis through charts and tables (dashboard), and track data provenance (manual entry or ML-generated).
-                      </p>
-                    </div>
+                </div>
+                <div className="absolute -top-4 left-1/2 group">
+                  <div className="h-8 w-8 rounded-full bg-green-100 cursor-pointer group-hover:bg-green-200 transition-colors duration-300 border-2 border-black" />
+                  <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
+                    <h6 className="font-semibold text-gray-900">Architecture Design</h6>
+                    <p className="text-sm text-gray-600 mt-2">Define system architecture and technology stack.</p>
                   </div>
-                  <div className="mt-10 lg:mt-0 p-4">
-                    <div className="h-200 flex items-center justify-center">
-                      <img
-                        src={withBaseUrl('img/assets/implementation.svg')}
-                        width="220px"
-                        height="220px"
-                        alt="Implementation on your website"
-                      />
-                    </div>
-                    <div>
-                      <h5 className="text-lg leading-6 font-medium text-gray-900">3. Outlier Detection Mechanism</h5>
-                      <p className="mt-2 text-base leading-6 text-gray-600">
-                      Create a mechanism to detect data inconsistencies (outliers).
-                      </p>
-                    </div>
+                </div>
+                <div className="absolute -top-4 left-3/4 group">
+                  <div className="h-8 w-8 rounded-full bg-green-100 cursor-pointer group-hover:bg-green-200 transition-colors duration-300 border-2 border-black" />
+                  <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
+                    <h6 className="font-semibold text-gray-900">Prototype Development</h6>
+                    <p className="text-sm text-gray-600 mt-2">Develop a functional prototype to validate key features.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Anatomy of DocSearch */}
-        <div id='timeline-doc' className="py-16 overflow-hidden lg:py-24">
-          <div className="relative max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl">
-            <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-              <div className="relative">
-                <h4 className="text-2xl leading-8 font-extrabold tracking-tight md:text-3xl md:leading-9">
-                  Overview of DocSearch
-                </h4>
-                <p className="mt-3 text-lg leading-7 text-description">
-                  Search doesn't have to be painful — when a user searches through your docs, they'll get a frictionless
-                  modal dialog to work in. And it's a Free Service!
-                </p>
-
-                <ul className="mt-10">
-                  <li>
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-algolia text-white">
-                          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="sparkles w-6 h-6">
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-                            ></path>
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <h5 className="text-lg leading-6 font-medium">All featured search box</h5>
-                        <p className="mt-2 text-base leading-6 text-description">
-                          The conversation start here: you want to have the state-of-the-art search box to represent
-                          your voice. DocSearch comes with our extensive experience in making this search box respects
-                          all the best practices.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="mt-10">
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-algolia text-white">
-                          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="menu-alt2 w-6 h-6">
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M4 6h16M4 12h16M4 18h7"
-                            ></path>
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <h5 className="text-lg leading-6 font-medium">Hierarchical display</h5>
-                        <p className="mt-2 text-base leading-6 text-description">
-                          DocSearch organizes the search results into chunks that reflect how your documentation is
-                          structured.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+          
+          {/* M1 to M2 */}
+          <div className="relative">
+            <div className="flex justify-between items-center">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-algolia text-white border-2 border-black shadow-lg relative z-10">
+                  <span className="font-bold text-xl">M1</span>
+                </div>
               </div>
-
-              <div className="mt-10 -mx-4 lg:mt-0 uil-ta-center">
-                <img
-                  className="relative mx-auto rounded-lg shadow-lg image-rendering-crisp"
-                  src={withBaseUrl(
-                    `img/assets/${colorMode === 'dark' ? 'docsearch-shadow-dark' : 'docsearch-shadow'}.png`,
-                  )}
-                  alt="docsearch-modal"
-                />
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-500 text-white border-2 border-black shadow-lg relative z-10">
+                  <span className="font-bold text-xl">M2</span>
+                </div>
               </div>
             </div>
 
-            <div className="relative mt-12 md:mt-16 lg:mt-24">
-              <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-                <div className="lg:col-start-2">
-                  <ul className="mt-10">
-                    <li>
-                      <div className="flex">
-                        <div className="flex-shrink-0">
-                          <div className="flex items-center justify-center h-12 w-12 rounded-md bg-algolia text-white">
-                            <svg
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                              className="lightning-bolt w-6 h-6"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M13 10V3L4 14h7v7l9-11h-7z"
-                              ></path>
-                            </svg>
-                          </div>
-                        </div>
-                        <div className="ml-4">
-                          <h5 className="text-lg leading-6 font-medium">Inputs and shortcuts</h5>
-                          <p className="mt-2 text-base leading-6 text-description">
-                            It looks almost similar to a search input but it's a button. When you click/touch or use the
-                            keyboard shortcut, it opens a modal dropdown and focuses the search input.
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="mt-10">
-                      <div className="flex">
-                        <div className="flex-shrink-0">
-                          <div className="flex items-center justify-center h-12 w-12 rounded-md bg-algolia text-white">
-                            <svg
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                              className="arrows-expand w-6 h-6"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
-                              ></path>
-                            </svg>
-                          </div>
-                        </div>
-                        <div className="ml-4">
-                          <h5 className="text-lg leading-6 font-medium">Always sized and positioned correctly</h5>
-                          <p className="mt-2 text-base leading-6 text-description">
-                            The modal experience leverages behavior of most popular Integrated Developement
-                            Environements (IDEs) or native experience on mobile. An opaque layer is making sure we keep
-                            the context of the documentation but remove all visual pollution.
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+            <div className="absolute top-8 left-16 right-16 h-2 bg-gradient-to-r from-algolia to-blue-500 border-2 border-black -translate-y-1/2">
+              <div className="relative h-full">
+                <div className="absolute -top-4 left-1/4 group">
+                  <div className="h-8 w-8 rounded-full bg-blue-100 cursor-pointer group-hover:bg-blue-200 transition-colors duration-300 border-2 border-black" />
+                  <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
+                    <h6 className="font-semibold text-gray-900">Backend Implementation</h6>
+                    <p className="text-sm text-gray-600 mt-2">Develop core backend services and database integration.</p>
+                  </div>
                 </div>
-
-                <div className="mt-10 -mx-4 lg:mt-0 lg:col-start-1 uil-ta-center">
-                  <img
-                    className="relative mx-auto"
-                    width="490"
-                    src={withBaseUrl('img/assets/anatomy.svg')}
-                    alt="anatomy-of-docsearch"
-                  />
+                <div className="absolute -top-4 left-1/2 group">
+                  <div className="h-8 w-8 rounded-full bg-blue-100 cursor-pointer group-hover:bg-blue-200 transition-colors duration-300 border-2 border-black" />
+                  <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
+                    <h6 className="font-semibold text-gray-900">Frontend Development</h6>
+                    <p className="text-sm text-gray-600 mt-2">Build and refine user interface components.</p>
+                  </div>
+                </div>
+                <div className="absolute -top-4 left-3/4 group">
+                  <div className="h-8 w-8 rounded-full bg-blue-100 cursor-pointer group-hover:bg-blue-200 transition-colors duration-300 border-2 border-black" />
+                  <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
+                    <h6 className="font-semibold text-gray-900">Testing and QA</h6>
+                    <p className="text-sm text-gray-600 mt-2">Perform unit tests and system validation.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* M2 to M3 */}
+          <div className="relative">
+            <div className="flex justify-between items-center">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-500 text-white border-2 border-black shadow-lg relative z-10">
+                  <span className="font-bold text-xl">M2</span>
+                </div>
+              </div>
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-purple-500 text-white border-2 border-black shadow-lg relative z-10">
+                  <span className="font-bold text-xl">M3</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="absolute top-8 left-16 right-16 h-2 bg-gradient-to-r from-blue-500 to-purple-500 border-2 border-black -translate-y-1/2">
+              <div className="relative h-full">
+                <div className="absolute -top-4 left-1/4 group">
+                  <div className="h-8 w-8 rounded-full bg-purple-100 cursor-pointer group-hover:bg-purple-200 transition-colors duration-300 border-2 border-black" />
+                  <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
+                    <h6 className="font-semibold text-gray-900">API Integration</h6>
+                    <p className="text-sm text-gray-600 mt-2">Integrate third-party APIs and external services.</p>
+                  </div>
+                </div>
+                <div className="absolute -top-4 left-1/2 group">
+                  <div className="h-8 w-8 rounded-full bg-purple-100 cursor-pointer group-hover:bg-purple-200 transition-colors duration-300 border-2 border-black" />
+                  <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
+                    <h6 className="font-semibold text-gray-900">Security Implementation</h6>
+                    <p className="text-sm text-gray-600 mt-2">Implement security measures and protocols.</p>
+                  </div>
+                </div>
+                <div className="absolute -top-4 left-3/4 group">
+                  <div className="h-8 w-8 rounded-full bg-purple-100 cursor-pointer group-hover:bg-purple-200 transition-colors duration-300 border-2 border-black" />
+                  <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
+                    <h6 className="font-semibold text-gray-900">System Optimization</h6>
+                    <p className="text-sm text-gray-600 mt-2">Optimize system performance for scalability.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* M3 to M4 */}
+<div className="relative">
+  <div className="flex justify-between items-center">
+    <div className="flex-shrink-0">
+      <div className="flex items-center justify-center h-16 w-16 rounded-full bg-purple-500 text-white border-2 border-black shadow-lg relative z-10">
+        <span className="font-bold text-xl">M3</span>
+      </div>
+    </div>
+    <div className="flex-shrink-0">
+      <div className="flex items-center justify-center h-16 w-16 rounded-full bg-teal-500 text-white border-2 border-black shadow-lg relative z-10">
+        <span className="font-bold text-xl">M4</span>
+      </div>
+    </div>
+  </div>
+
+  <div className="absolute top-8 left-16 right-16 h-2 bg-gradient-to-r from-purple-500 to-teal-500 border-2 border-black -translate-y-1/2">
+    <div className="relative h-full">
+      <div className="absolute -top-4 left-1/4 group">
+        <div className="h-8 w-8 rounded-full bg-teal-100 cursor-pointer group-hover:bg-teal-200 transition-colors duration-300 border-2 border-black" />
+        <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
+          <h6 className="font-semibold text-gray-900">Final Testing</h6>
+          <p className="text-sm text-gray-600 mt-2">Perform final testing and user acceptance.</p>
         </div>
+      </div>
+
+      <div className="absolute -top-4 left-1/2 group">
+        <div className="h-8 w-8 rounded-full bg-teal-100 cursor-pointer group-hover:bg-teal-200 transition-colors duration-300 border-2 border-black" />
+        <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
+          <h6 className="font-semibold text-gray-900">Deployment</h6>
+          <p className="text-sm text-gray-600 mt-2">Deploy the final product to production environment.</p>
+        </div>
+      </div>
+
+      <div className="absolute -top-4 left-3/4 group">
+        <div className="h-8 w-8 rounded-full bg-teal-100 cursor-pointer group-hover:bg-teal-200 transition-colors duration-300 border-2 border-black" />
+        <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
+          <h6 className="font-semibold text-gray-900">Project Handover</h6>
+          <p className="text-sm text-gray-600 mt-2">Complete the project handover and provide support documentation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
          {/* Powered by Algolia */}
          <div id="presentations-doc" className="py-16 bg-algolia overflow-hidden lg:py-24">
