@@ -71,7 +71,7 @@ function Home() {
 
     <div className="pt-6 pb-12">
   <ul className="grid grid-cols-1 gap-8 lg:grid-cols-4 lg:gap-12 md:grid-cols-2">
-    <li>
+    <li className="hidden lg:block">
       <div className="flex justify-center">
         <div
           className="max-w-xs w-full bg-indigo-700 border-2 border-indigo-800 dark:border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-indigo-900 hover:bg-indigo-800 hover:text-white cursor-pointer transition-colors duration-300"
@@ -84,7 +84,7 @@ function Home() {
       </div>
     </li>
 
-    <li>
+    <li className="hidden lg:block">
       <div className="flex justify-center">
         <div
           className="max-w-xs w-full bg-indigo-700 border-2 border-indigo-800 dark:border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-indigo-900 hover:bg-indigo-800 hover:text-white cursor-pointer transition-colors duration-300"
@@ -97,7 +97,7 @@ function Home() {
       </div>
     </li>
 
-    <li>
+    <li className="hidden lg:block">
       <div className="flex justify-center">
         <div
           className="max-w-xs w-full bg-indigo-700 border-2 border-indigo-800 dark:border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-indigo-900 hover:bg-indigo-800 hover:text-white cursor-pointer transition-colors duration-300"
@@ -110,7 +110,7 @@ function Home() {
       </div>
     </li>
 
-    <li>
+    <li className="hidden lg:block">
       <div className="flex justify-center">
         <div
           className="max-w-xs w-full bg-indigo-700 border-2 border-indigo-800 dark:border-white shadow-lg rounded-lg p-6 text-center flex flex-col justify-center items-center h-full hover:border-indigo-900 hover:bg-indigo-800 hover:text-white cursor-pointer transition-colors duration-300"
@@ -217,7 +217,7 @@ function Home() {
         </div>
 
         {/* Timeline Section */}
-<div id="timeline-doc" className="py-24 overflow-hidden lg:py-32">
+<div id="timeline-doc" className="py-24 overflow-hidden lg:py-32 lg:pb-40 ">
   <div className="relative max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
     <div className="relative">
       <h4 className="text-3xl leading-8 font-extrabold tracking-tight md:text-4xl md:leading-10 text-center mb-24">
@@ -435,7 +435,7 @@ function Home() {
           <h5 className="text-2xl font-semibold text-shadow-md">Inception</h5>
           {/* Novo Layout para o botão */}
           <a
-            href="https://drive.google.com/file/d/1Cp-nUeyLaDu-xGT2X-eBbS-lp36VTwKH/view?usp=sharing"
+            href="https://docs.google.com/presentation/d/13cB6pIF44zsHFokwqYL-oaWYFSK9x_Dd_i6uE2Ch0UU/edit?usp=sharing"
             download
             className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transform transition-all duration-300 ease-in-out hover:scale-105"
           >

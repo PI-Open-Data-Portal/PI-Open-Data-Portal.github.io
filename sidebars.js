@@ -18,17 +18,17 @@ export default {
     },
     {
       type: 'category',
-      label: 'DocSearch v3',
+      label: 'Coming Soon',
       items: ['docsearch-v3', 'api', 'styling', 'migrating-from-v2'],
     },
     {
       type: 'category',
-      label: 'Algolia Crawler',
+      label: 'Coming Soon',
       items: ['record-extractor', 'templates', 'manage-your-crawls'],
     },
     {
       type: 'category',
-      label: 'Requirements, tips, FAQ',
+      label: 'Coming Soon',
       items: [
         {
           type: 'category',
@@ -47,7 +47,7 @@ export default {
     },
     {
       type: 'category',
-      label: 'Under the hood',
+      label: 'Coming Soon',
       items: ['how-does-it-work', 'required-configuration'],
     },
   ],
