@@ -30,12 +30,12 @@ function Home() {
           <>
            <div className="flex justify-center items-center mt-[-30px]">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-indigo-700 whitespace-nowrap">
-            Nexus - Porto de Sines
+            Open Data Portal
           </h1>
         </div>
             
             <span className="hero-title text-3xl leading-9 font-extrabold md:text-3xl lg:text-3xl md:leading-10 max-w-xxs inline-block">
-              Open Data Portal
+              Data Analysis System
             </span>
           </>
         }
