@@ -6,13 +6,13 @@ import tailwindLoader from './plugins/tailwind-loader.mjs';
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 export default {
-  title: 'DocSearch by Algolia',
-  tagline: 'The best search experience for docs, integrated in minutes, for free.',
-  url: 'https://docsearch.algolia.com',
+  title: 'PI Open Data Portal',
+  tagline: 'Open Data Portal',
+  url: 'https://pi-open-data-portal.github.io/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'Algolia',
-  projectName: 'DocSearch',
+  organizationName: 'PI-Open-Data-Portal', // Usually your GitHub org/user name.
+  projectName: 'PI-Open-Data-Portal.github.io', // Usually your repo name.
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   presets: [
@@ -23,7 +23,7 @@ export default {
         docs: {
           path: 'docs',
           sidebarPath: 'sidebars.js',
-          editUrl: 'https://github.com/algolia/docsearch/edit/main/packages/website/',
+          editUrl: 'https://github.com/PI-Open-Data-Portal/PI-Open-Data-Portal.github.io/edit/main/',
           versions: {
             current: {
               label: 'current',
