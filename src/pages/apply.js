@@ -8,8 +8,7 @@ import DocSearchLogo from '../components/DocSearchLogo';
 function ApplyPage() {
   return (
     <Layout
-      title="DocSearch: Search made for documentation"
-      description="The easiest way to add search to your documentation - Powered by Algolia"
+      title="Open Data Portal"
     >
       <div className="uil-pb-24">
         <Hero id="hero-apply" title={<DocSearchLogo width="100%" />} background="curves" />

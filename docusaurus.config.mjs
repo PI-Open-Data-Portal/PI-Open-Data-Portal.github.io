@@ -10,7 +10,7 @@ export default {
   tagline: 'The best search experience for docs, integrated in minutes, for free.',
   url: 'https://docsearch.algolia.com',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.png',
   organizationName: 'Algolia',
   projectName: 'DocSearch',
   onBrokenLinks: 'throw',
