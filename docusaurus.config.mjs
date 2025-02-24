@@ -58,11 +58,11 @@ export default {
       navbar: {
         hideOnScroll: true,
         logo: {
-          src: 'img/Nexus_logotipo_white.png',
-          srcDark: 'img/Nexus_logotipo_white.png',
-          width: 150,
-          height: 150,
+          src: 'img/logopng.png',
+          srcDark: 'img/logo2.png',
+          style: { width: '75px', height: '75px' } // Ajuste o tamanho conforme necessário
         },
+      
         items: [
 
           // right
