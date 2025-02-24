@@ -118,7 +118,7 @@ function Home() {
             document.getElementById('integrantes-doc').scrollIntoView({ behavior: 'smooth' });
           }}
         >
-          <h4 className="text-2xl leading-8 font-medium text-white mt-4">Integrantes</h4>
+          <h4 className="text-2xl leading-8 font-medium text-white mt-4">Members</h4>
         </div>
       </div>
     </li>
@@ -489,7 +489,7 @@ function Home() {
   <div className="max-w-screen-xl mx-auto px-4 md:px-6 lg:px-8">
     <div className="text-center">
       <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight md:text-4xl md:leading-10">
-        Integrantes
+        Members
       </h3>
       <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-description lg:mx-auto">
         Meet the team behind this project. We're a group of 5 students and 2 professors, working together to make it happen.
