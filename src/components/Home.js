@@ -247,22 +247,22 @@ function Home() {
                 <div className="absolute -top-4 left-1/4 group">
                   <div className="h-8 w-8 rounded-full bg-green-100 cursor-pointer group-hover:bg-green-200 transition-colors duration-300 border-2 border-black" />
                   <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
-                    <h6 className="font-semibold text-gray-900">Requirements Analysis</h6>
-                    <p className="text-sm text-gray-600 mt-2">Identify key stakeholders and gather detailed project requirements.</p>
+                    <h6 className="font-semibold text-gray-900">Technologies</h6>
+                    <p className="text-sm text-gray-600 mt-2">Tools and languages selected for the project.</p>
                   </div>
                 </div>
                 <div className="absolute -top-4 left-1/2 group">
                   <div className="h-8 w-8 rounded-full bg-green-100 cursor-pointer group-hover:bg-green-200 transition-colors duration-300 border-2 border-black" />
                   <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
-                    <h6 className="font-semibold text-gray-900">Architecture Design</h6>
-                    <p className="text-sm text-gray-600 mt-2">Define system architecture and technology stack.</p>
+                    <h6 className="font-semibold text-gray-900">Use Cases</h6>
+                    <p className="text-sm text-gray-600 mt-2">Main features and how users interact with the system.</p>
                   </div>
                 </div>
                 <div className="absolute -top-4 left-3/4 group">
                   <div className="h-8 w-8 rounded-full bg-green-100 cursor-pointer group-hover:bg-green-200 transition-colors duration-300 border-2 border-black" />
                   <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
-                    <h6 className="font-semibold text-gray-900">Prototype Development</h6>
-                    <p className="text-sm text-gray-600 mt-2">Develop a functional prototype to validate key features.</p>
+                    <h6 className="font-semibold text-gray-900">Architecture</h6>
+                    <p className="text-sm text-gray-600 mt-2">Technical structure and organization of system components.</p>
                   </div>
                 </div>
               </div>
@@ -289,22 +289,22 @@ function Home() {
                 <div className="absolute -top-4 left-1/4 group">
                   <div className="h-8 w-8 rounded-full bg-blue-100 cursor-pointer group-hover:bg-blue-200 transition-colors duration-300 border-2 border-black" />
                   <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
-                    <h6 className="font-semibold text-gray-900">Backend Implementation</h6>
-                    <p className="text-sm text-gray-600 mt-2">Develop core backend services and database integration.</p>
+                    <h6 className="font-semibold text-gray-900">Explore the Original Database</h6>
+                    <p className="text-sm text-gray-600 mt-2">Analyze the existing data structure, content, and relationships.</p>
                   </div>
                 </div>
                 <div className="absolute -top-4 left-1/2 group">
                   <div className="h-8 w-8 rounded-full bg-blue-100 cursor-pointer group-hover:bg-blue-200 transition-colors duration-300 border-2 border-black" />
                   <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
-                    <h6 className="font-semibold text-gray-900">Frontend Development</h6>
-                    <p className="text-sm text-gray-600 mt-2">Build and refine user interface components.</p>
+                    <h6 className="font-semibold text-gray-900">Creation of the Database with Metadata</h6>
+                    <p className="text-sm text-gray-600 mt-2">Design a new database including descriptive information (metadata) for better organization and understanding.</p>
                   </div>
                 </div>
                 <div className="absolute -top-4 left-3/4 group">
                   <div className="h-8 w-8 rounded-full bg-blue-100 cursor-pointer group-hover:bg-blue-200 transition-colors duration-300 border-2 border-black" />
                   <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
-                    <h6 className="font-semibold text-gray-900">Testing and QA</h6>
-                    <p className="text-sm text-gray-600 mt-2">Perform unit tests and system validation.</p>
+                    <h6 className="font-semibold text-gray-900">Implementation of the API</h6>
+                    <p className="text-sm text-gray-600 mt-2">Develop an interface to allow external systems to access and interact with the database.</p>
                   </div>
                 </div>
               </div>
@@ -331,22 +331,22 @@ function Home() {
                 <div className="absolute -top-4 left-1/4 group">
                   <div className="h-8 w-8 rounded-full bg-purple-100 cursor-pointer group-hover:bg-purple-200 transition-colors duration-300 border-2 border-black" />
                   <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
-                    <h6 className="font-semibold text-gray-900">API Integration</h6>
-                    <p className="text-sm text-gray-600 mt-2">Integrate third-party APIs and external services.</p>
+                    <h6 className="font-semibold text-gray-900">Data Prediction and Outlier Detection</h6>
+                    <p className="text-sm text-gray-600 mt-2">Apply models to forecast values and identify anomalies in the data.</p>
                   </div>
                 </div>
                 <div className="absolute -top-4 left-1/2 group">
                   <div className="h-8 w-8 rounded-full bg-purple-100 cursor-pointer group-hover:bg-purple-200 transition-colors duration-300 border-2 border-black" />
                   <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
-                    <h6 className="font-semibold text-gray-900">Security Implementation</h6>
-                    <p className="text-sm text-gray-600 mt-2">Implement security measures and protocols.</p>
+                    <h6 className="font-semibold text-gray-900">Prototype</h6>
+                    <p className="text-sm text-gray-600 mt-2">Initial working version of the system to demonstrate key features.</p>
                   </div>
                 </div>
                 <div className="absolute -top-4 left-3/4 group">
                   <div className="h-8 w-8 rounded-full bg-purple-100 cursor-pointer group-hover:bg-purple-200 transition-colors duration-300 border-2 border-black" />
                   <div className="invisible group-hover:visible absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-72 p-6 bg-gray-50 shadow-xl rounded-xl z-20">
-                    <h6 className="font-semibold text-gray-900">System Optimization</h6>
-                    <p className="text-sm text-gray-600 mt-2">Optimize system performance for scalability.</p>
+                    <h6 className="font-semibold text-gray-900">Analysis Module</h6>
+                    <p className="text-sm text-gray-600 mt-2">Component responsible for processing and extracting insights from data.</p>
                   </div>
                 </div>
               </div>
@@ -450,29 +450,102 @@ function Home() {
       </div>
 
       {/* Coming Soon 1 */}
-      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-not-allowed opacity-60 transition-all transform hover:scale-105 hover:shadow-xl">
-        <div className="absolute inset-0 bg-gray-800"></div>
-        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white">
-          <h5 className="text-2xl font-semibold">Presentation 2</h5>
-          <p className="mt-2 text-sm font-light">Coming Soon</p>
+      {/* PowerPoint Disponível - Card 1 */}
+      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-pointer transition-all transform hover:scale-105 hover:shadow-xl">
+        {/* Fundo com a imagem do PowerPoint */}
+        <div
+          className="absolute inset-0 bg-cover bg-center transition-transform transform group-hover:scale-110"
+          style={{
+            backgroundImage: "url('/img/assets/m1.jpg')",  // Imagem do seu PowerPoint
+            height: '100%',
+          }}
+        ></div>
+
+        {/* Camada de sobreposição para melhorar contraste */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent group-hover:bg-gradient-to-t group-hover:from-black group-hover:to-transparent transition-opacity"></div>
+
+        {/* Conteúdo sobreposto */}
+        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white transition-opacity group-hover:opacity-100 opacity-80">
+          <h5 className="text-2xl font-semibold text-shadow-md">M1</h5>
+          {/* Novo Layout para o botão */}
+          <a
+            href="https://docs.google.com/presentation/d/1awYzIPstRRAQdGp66fkFIResul4E_RHZ/edit?usp=sharing&ouid=100667939769516213354&rtpof=true&sd=true"
+            download
+            className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transform transition-all duration-300 ease-in-out hover:scale-105"
+          >
+            <span className="flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M7 16l4 4 4-4m-4-12v12" />
+              </svg>
+              Download
+            </span>
+          </a>
         </div>
       </div>
 
       {/* Coming Soon 2 */}
-      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-not-allowed opacity-60 transition-all transform hover:scale-105 hover:shadow-xl">
-        <div className="absolute inset-0 bg-gray-800"></div>
-        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white">
-          <h5 className="text-2xl font-semibold">Presentation 3</h5>
-          <p className="mt-2 text-sm font-light">Coming Soon</p>
+      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-pointer transition-all transform hover:scale-105 hover:shadow-xl">
+        {/* Fundo com a imagem do PowerPoint */}
+        <div
+          className="absolute inset-0 bg-cover bg-center transition-transform transform group-hover:scale-110"
+          style={{
+            backgroundImage: "url('/img/assets/m2.jpeg')",  // Imagem do seu PowerPoint
+            height: '100%',
+          }}
+        ></div>
+
+        {/* Camada de sobreposição para melhorar contraste */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent group-hover:bg-gradient-to-t group-hover:from-black group-hover:to-transparent transition-opacity"></div>
+
+        {/* Conteúdo sobreposto */}
+        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white transition-opacity group-hover:opacity-100 opacity-80">
+          <h5 className="text-2xl font-semibold text-shadow-md">M2</h5>
+          {/* Novo Layout para o botão */}
+          <a
+            href="https://docs.google.com/presentation/d/1awYzIPstRRAQdGp66fkFIResul4E_RHZ/edit?usp=sharing&ouid=100667939769516213354&rtpof=true&sd=true"
+            download
+            className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transform transition-all duration-300 ease-in-out hover:scale-105"
+          >
+            <span className="flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M7 16l4 4 4-4m-4-12v12" />
+              </svg>
+              Download
+            </span>
+          </a>
         </div>
       </div>
 
       {/* Coming Soon 3 */}
-      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-not-allowed opacity-60 transition-all transform hover:scale-105 hover:shadow-xl">
-        <div className="absolute inset-0 bg-gray-800"></div>
-        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white">
-          <h5 className="text-2xl font-semibold">Presentation 4</h5>
-          <p className="mt-2 text-sm font-light">Coming Soon</p>
+      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-pointer transition-all transform hover:scale-105 hover:shadow-xl">
+        {/* Fundo com a imagem do PowerPoint */}
+        <div
+          className="absolute inset-0 bg-cover bg-center transition-transform transform group-hover:scale-110"
+          style={{
+            backgroundImage: "url('/img/assets/m3.jpg')",  // Imagem do seu PowerPoint
+            height: '100%',
+          }}
+        ></div>
+
+        {/* Camada de sobreposição para melhorar contraste */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent group-hover:bg-gradient-to-t group-hover:from-black group-hover:to-transparent transition-opacity"></div>
+
+        {/* Conteúdo sobreposto */}
+        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white transition-opacity group-hover:opacity-100 opacity-80">
+          <h5 className="text-2xl font-semibold text-shadow-md">M3</h5>
+          {/* Novo Layout para o botão */}
+          <a
+            href="https://drive.google.com/file/d/1pKTCY0cxekEJjhVflz6okwmB8aJouAbB/view?usp=sharing"
+            download
+            className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transform transition-all duration-300 ease-in-out hover:scale-105"
+          >
+            <span className="flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M7 16l4 4 4-4m-4-12v12" />
+              </svg>
+              Download
+            </span>
+          </a>
         </div>
       </div>
 
