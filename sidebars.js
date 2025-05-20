@@ -18,21 +18,21 @@ export default {
     },
     {
       type: 'category',
-      label: 'Coming Soon',
+      label: 'M1',
       items: ['docsearch-v3', 'api', 'styling', 'migrating-from-v2'],
     },
     {
       type: 'category',
-      label: 'Coming Soon',
+      label: 'M2',
       items: ['record-extractor', 'templates', 'manage-your-crawls'],
     },
     {
       type: 'category',
-      label: 'Coming Soon',
+      label: 'M3',
       items: [
         {
           type: 'category',
-          label: 'FAQ',
+          label: 'Context',
           items: ['crawler', 'docsearch-program'],
         },
         {

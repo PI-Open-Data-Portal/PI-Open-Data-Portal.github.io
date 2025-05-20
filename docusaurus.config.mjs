@@ -10,9 +10,10 @@ export default {
   tagline: 'Open Data Portal',
   url: 'https://pi-open-data-portal.github.io/',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.png',
   organizationName: 'PI-Open-Data-Portal', // Usually your GitHub org/user name.
   projectName: 'PI-Open-Data-Portal.github.io', // Usually your repo name.
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   presets: [
@@ -62,7 +63,7 @@ export default {
           srcDark: 'img/logo2.png',
           style: { width: '75px', height: '75px' } // Ajuste o tamanho conforme necessário
         },
-      
+
         items: [
 
           // right

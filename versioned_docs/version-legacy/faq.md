@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: Context
 ---
 
 If you're not finding the answer to your question on this website, this page will help you. If you're still unsure, don't hesitate to connect with us on [Discord][1] or let our [support][19] team know.
