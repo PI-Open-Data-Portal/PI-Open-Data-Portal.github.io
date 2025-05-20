@@ -23,7 +23,7 @@ export default {
         docs: {
           path: 'docs',
           sidebarPath: 'sidebars.js',
-          editUrl: 'https://github.com/PI-Open-Data-Portal/PI-Open-Data-Portal.github.io',
+          editUrl: 'https://github.com/PI-Open-Data-Portal/PI-Open-Data-Portal.github.io/edit/main/',
           versions: {
             current: {
               label: 'current',
