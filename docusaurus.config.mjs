@@ -8,11 +8,11 @@ import tailwindLoader from './plugins/tailwind-loader.mjs';
 export default {
   title: 'DocSearch by Algolia',
   tagline: 'The best search experience for docs, integrated in minutes, for free.',
-  url: 'https://docsearch.algolia.com',
+  url: 'https://PI-Open-Data-Portal.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'Algolia',
-  projectName: 'DocSearch',
+  organizationName: 'PI-Open-Data-Portal',
+  projectName: 'PI-Open-Data-Portal.github.io',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   presets: [
@@ -23,7 +23,7 @@ export default {
         docs: {
           path: 'docs',
           sidebarPath: 'sidebars.js',
-          editUrl: 'https://github.com/algolia/docsearch/edit/main/packages/website/',
+          editUrl: '',
           versions: {
             current: {
               label: 'current',
@@ -62,7 +62,7 @@ export default {
           srcDark: 'img/logo2.png',
           style: { width: '75px', height: '75px' } // Ajuste o tamanho conforme necessário
         },
-      
+
         items: [
 
           // right
