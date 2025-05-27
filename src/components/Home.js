@@ -9,6 +9,7 @@ import DocSearchLogo from './DocSearchLogo';
 import showcaseProjects from './showcase-projects.json';
 
 
+import pdf from "./OpenDataPortal-Poster.pdf";
 
 function Home() {
   const { withBaseUrl } = useBaseUrlUtils();
@@ -407,153 +408,151 @@ function Home() {
 
 
          {/* Powered by Algolia */}
-         <div id="presentations-doc" className="py-16 bg-algolia overflow-hidden lg:py-24">
-  <div className="text-center">
-    <h3 className="mt-2 text-3xl leading-8 font-extrabold text-white tracking-tight md:text-4xl md:leading-10">
-      Presentations
-    </h3>
-  </div>
-  <div className="relative max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl">
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-10">
+<div id="presentations-doc" className="py-16 bg-algolia overflow-hidden lg:py-24">
+  <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+
+    {/* Presentations Section - Full Width */}
+    <div className="mb-16">
+      <h4 className="text-2xl font-bold text-white text-center mb-8">Presentations</h4>
       
-      {/* PowerPoint Disponível - Card 1 */}
-      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-pointer transition-all transform hover:scale-105 hover:shadow-xl">
-        {/* Fundo com a imagem do PowerPoint */}
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-transform transform group-hover:scale-110"
-          style={{
-            backgroundImage: "url('/img/assets/ppt1.svg')",  // Imagem do seu PowerPoint
-            height: '100%',
-          }}
-        ></div>
+      {/* Horizontal Scrollable Container */}
+      <div className="flex space-x-6 overflow-x-auto pb-4">
+        {/* Card - Reutilizável */}
+        {[
+          {
+            title: 'Inception',
+            img: '/img/assets/ppt1.svg',
+            link: 'https://docs.google.com/presentation/d/1OEVRoA3UoXnU9jKVH4YhqLYetsXLSN3z/edit#slide=id.p4'
+          },
+          {
+            title: 'M2',
+            img: '/img/assets/m1.jpg',
+            link: 'https://docs.google.com/presentation/d/1awYzIPstRRAQdGp66fkFIResul4E_RHZ/edit?usp=sharing'
+          },
+          {
+            title: 'Checkpoint 1',
+            img: '/img/assets/demo.png',
+            link: 'https://docs.google.com/presentation/d/1RaEDWtTOHlEzXXlgNzZcp4z70XoSlhSq/edit?usp=sharing&ouid=102353031943616774716&rtpof=true&sd=true'
+          },
+          {
+            title: 'M3',
+            img: '/img/assets/m2.jpeg',
+            link: 'https://docs.google.com/presentation/d/1awYzIPstRRAQdGp66fkFIResul4E_RHZ/edit?usp=sharing'
+          },
+          {
+            title: 'Checkpoint 2',
+            img: '/img/assets/demo.png',
+            link: 'https://docs.google.com/presentation/d/1Q9uVIw36456xA8PJhLj6cmBvWraSCnRR/edit?usp=sharing&ouid=100667939769516213354&rtpof=true&sd=true'
+          },
+          {
+            title: 'Checkpoint 3',
+            img: '/img/assets/demo.png',
+            link: 'https://docs.google.com/presentation/d/1RaEDWtTOHlEzXXlgNzZcp4z70XoSlhSq/edit?usp=sharing&ouid=100667939769516213354&rtpof=true&sd=true'
+          },
+          {
+            title: 'Demo',
+            img: '/img/assets/demo.png',
+            link: 'https://docs.google.com/presentation/d/1gp6PMO3Ekd1Zabi7Wo7y_mfcQvAql6Lh/edit?usp=sharing&ouid=100667939769516213354&rtpof=true&sd=true'
+          },
+          {
+            title: 'M4',
+            img: '/img/assets/m3.jpg',
+            link: 'https://drive.google.com/file/d/1pKTCY0cxekEJjhVflz6okwmB8aJouAbB/view?usp=sharing'
+          }
+        ].map(({ title, img, link }) => (
+          <div key={title} className="relative group rounded-lg shadow-xl overflow-hidden cursor-pointer h-56 w-full max-w-md flex-shrink-0">
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url('${img}')` }}
+            ></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent group-hover:bg-gradient-to-t group-hover:from-black group-hover:to-transparent transition-opacity"></div>
+            <div className="relative p-4 flex flex-col items-center justify-center text-center text-white transition-opacity group-hover:opacity-100 opacity-80 h-full">
+              <h5 className="text-sm font-semibold text-shadow-md mb-3">{title}</h5>
+              <a
+                href={link}
+                download
+                className="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs font-semibold rounded shadow-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300"
+              >
+                <span className="flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M7 16l4 4 4-4m-4-12v12" />
+                  </svg>
+                  Download
+                </span>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
 
-        {/* Camada de sobreposição para melhorar contraste */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent group-hover:bg-gradient-to-t group-hover:from-black group-hover:to-transparent transition-opacity"></div>
-
-        {/* Conteúdo sobreposto */}
-        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white transition-opacity group-hover:opacity-100 opacity-80">
-          <h5 className="text-2xl font-semibold text-shadow-md">Inception</h5>
-          {/* Novo Layout para o botão */}
-          <a
-            href="https://docs.google.com/presentation/d/1OEVRoA3UoXnU9jKVH4YhqLYetsXLSN3z/edit#slide=id.p4"
-            download
-            className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transform transition-all duration-300 ease-in-out hover:scale-105"
-          >
-            <span className="flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M7 16l4 4 4-4m-4-12v12" />
-              </svg>
-              Download
-            </span>
-          </a>
+    {/* Video and Poster Section - Side by Side */}
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+      
+      {/* Video Section - Takes 2 columns for wider display */}
+      <div className="lg:col-span-2">
+        <h4 className="text-2xl font-bold text-white text-center mb-8">Video Promotional</h4>
+        <div className="w-full">
+          <div className="relative w-full" style={{ paddingBottom: '63.5%' }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
+              src="https://www.youtube.com/embed/krPzibcLUZg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </div>
 
-      {/* Coming Soon 1 */}
-      {/* PowerPoint Disponível - Card 1 */}
-      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-pointer transition-all transform hover:scale-105 hover:shadow-xl">
-        {/* Fundo com a imagem do PowerPoint */}
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-transform transform group-hover:scale-110"
-          style={{
-            backgroundImage: "url('/img/assets/m1.jpg')",  // Imagem do seu PowerPoint
-            height: '100%',
-          }}
-        ></div>
+      {/* Poster Section - Takes 1 column */}
+      <div className="lg:col-span-1">
+        <h4 className="text-2xl font-bold text-white text-center mb-8">Project Poster</h4>
+        <div className="w-full">
+          <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-pointer transition-all transform hover:scale-105 hover:shadow-xl bg-white">
+            {/* Preview using image.png with fallback methods */}
+            <img
+              className="w-full h-[500px] object-cover"
+              src={withBaseUrl('/img/assets/image99.png')}
+              alt="Project Poster"
+              onError={(e) => {
+                e.target.onerror = null; // Prevent infinite loop
+                e.target.src = withBaseUrl('/img/assets/poster-fallback.png'); // Fallback image
+              }}
+            />
 
-        {/* Camada de sobreposição para melhorar contraste */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent group-hover:bg-gradient-to-t group-hover:from-black group-hover:to-transparent transition-opacity"></div>
-
-        {/* Conteúdo sobreposto */}
-        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white transition-opacity group-hover:opacity-100 opacity-80">
-          <h5 className="text-2xl font-semibold text-shadow-md">M1</h5>
-          {/* Novo Layout para o botão */}
-          <a
-            href="https://docs.google.com/presentation/d/1awYzIPstRRAQdGp66fkFIResul4E_RHZ/edit?usp=sharing&ouid=100667939769516213354&rtpof=true&sd=true"
-            download
-            className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transform transition-all duration-300 ease-in-out hover:scale-105"
-          >
-            <span className="flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M7 16l4 4 4-4m-4-12v12" />
-              </svg>
-              Download
-            </span>
-          </a>
-        </div>
-      </div>
-
-      {/* Coming Soon 2 */}
-      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-pointer transition-all transform hover:scale-105 hover:shadow-xl">
-        {/* Fundo com a imagem do PowerPoint */}
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-transform transform group-hover:scale-110"
-          style={{
-            backgroundImage: "url('/img/assets/m2.jpeg')",  // Imagem do seu PowerPoint
-            height: '100%',
-          }}
-        ></div>
-
-        {/* Camada de sobreposição para melhorar contraste */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent group-hover:bg-gradient-to-t group-hover:from-black group-hover:to-transparent transition-opacity"></div>
-
-        {/* Conteúdo sobreposto */}
-        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white transition-opacity group-hover:opacity-100 opacity-80">
-          <h5 className="text-2xl font-semibold text-shadow-md">M2</h5>
-          {/* Novo Layout para o botão */}
-          <a
-            href="https://docs.google.com/presentation/d/1awYzIPstRRAQdGp66fkFIResul4E_RHZ/edit?usp=sharing&ouid=100667939769516213354&rtpof=true&sd=true"
-            download
-            className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transform transition-all duration-300 ease-in-out hover:scale-105"
-          >
-            <span className="flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M7 16l4 4 4-4m-4-12v12" />
-              </svg>
-              Download
-            </span>
-          </a>
-        </div>
-      </div>
-
-      {/* Coming Soon 3 */}
-      <div className="relative group rounded-lg shadow-2xl overflow-hidden cursor-pointer transition-all transform hover:scale-105 hover:shadow-xl">
-        {/* Fundo com a imagem do PowerPoint */}
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-transform transform group-hover:scale-110"
-          style={{
-            backgroundImage: "url('/img/assets/m3.jpg')",  // Imagem do seu PowerPoint
-            height: '100%',
-          }}
-        ></div>
-
-        {/* Camada de sobreposição para melhorar contraste */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent group-hover:bg-gradient-to-t group-hover:from-black group-hover:to-transparent transition-opacity"></div>
-
-        {/* Conteúdo sobreposto */}
-        <div className="relative p-6 flex flex-col items-center justify-center text-center text-white transition-opacity group-hover:opacity-100 opacity-80">
-          <h5 className="text-2xl font-semibold text-shadow-md">M3</h5>
-          {/* Novo Layout para o botão */}
-          <a
-            href="https://drive.google.com/file/d/1pKTCY0cxekEJjhVflz6okwmB8aJouAbB/view?usp=sharing"
-            download
-            className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-indigo-700 transform transition-all duration-300 ease-in-out hover:scale-105"
-          >
-            <span className="flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M7 16l4 4 4-4m-4-12v12" />
-              </svg>
-              Download
-            </span>
-          </a>
+            {/* Fallback div if image fails to load */}
+            <div
+              className="w-full h-[500px] bg-gray-200 hidden items-center justify-center text-gray-600 text-lg font-semibold"
+            >
+              Poster Preview
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <h5 className="text-xl font-semibold text-shadow-md mb-4">Open Data Portal</h5>
+              <a
+  href={pdf}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold rounded-lg shadow-lg hover:from-green-700 hover:to-emerald-700 transform transition-all duration-300 ease-in-out hover:scale-105"
+  download="OpenDataPortal-Poster.pdf"
+>
+  <span className="flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    </svg>
+    Download PDF
+  </span>
+</a>
+            </div>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
 </div>
-
-
 
 
         {/* Accessibility */}
