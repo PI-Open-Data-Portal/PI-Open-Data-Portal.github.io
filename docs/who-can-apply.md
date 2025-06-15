@@ -1,6 +1,34 @@
+# Problems and Motivation
 
-# Introduction
+The current system used by the Port of Sines lacks clear metadata and **data provenance** tracking, making it challenging for users to determine the origin, transformation history, and reliability of the data. Additionally, the presence of **missing or incorrect data** further complicates data analysis and interpretation.
 
-This project was carried out by a team of five students as part of the *Project in Informatics* course, within the Informatics Engineering degree at the University of Aveiro. It was proposed by the PSA and aimed to develop a maritime port management system integrating data provenance, automatic completion of missing data using MLM, and outlier detection with correction mechanisms, with some other features for quality of life.
+Our goal is to develop a platform that not only enables users to **visualize and analyze** detailed information but also provides full transparency regarding the origins and processing of the data. At the same time, the platform will address and correct issues related to missing and inaccurate data present in the original system.
 
-We developed a system that initially processes operational data in our case study, limited to one semester of operations from PSA. Using MLM, the system fills in missing values for a specific, critical data field. Each data point is then annotated with a provenance token to trace its origin. Finally, we built an intuitive user interface that enables users to visualize, analyze, and better understand both the data and its history.
+---
+
+## ❗ Identified Problems
+
+- Lack of clear metadata.  
+- No tracking of data provenance.  
+- Difficulty for users in identifying:
+  - The origin of the data;  
+  - The transformation history;  
+  - The reliability of the information.  
+- The presence of missing or inaccurate data that complicates:
+  - Data analysis;  
+  - Proper interpretation of the information.
+
+---
+
+## 💡 Proposed Solutions
+
+Create a platform that:
+
+- Detects missing data entries and completes them using ML models.  
+- Implements **Data Provenance annotations** for the dataset:
+  - Tracks and displays the origin of each dataset.  
+  - Documents and presents the transformation history.  
+  - Provides access to metadata associated with each dataset.  
+- Allows users to access structured and detailed datasets.  
+- Enables exporting of visualized data for external analysis.  
+- Identifies and corrects inaccurate or inconsistent values.

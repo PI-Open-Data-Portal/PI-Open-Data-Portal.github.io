@@ -6,11 +6,11 @@ import tailwindLoader from './plugins/tailwind-loader.mjs';
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 export default {
-  title: 'DocSearch by Algolia',
-  tagline: 'The best search experience for docs, integrated in minutes, for free.',
+  title: 'Open Data Portal', // Nome curto para o separador durante carregamento
+  tagline: 'The best open data portal for ports', // English subtitle
   url: 'https://PI-Open-Data-Portal.github.io',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.png', // Agora o favicon será o logo.png
   organizationName: 'PI-Open-Data-Portal',
   projectName: 'PI-Open-Data-Portal.github.io',
   onBrokenLinks: 'throw',
@@ -88,11 +88,7 @@ export default {
               {
                 label: 'Getting Started',
                 to: 'docs/what-is-docsearch',
-              },
-              {
-                label: 'FAQ',
-                to: 'docs/docsearch-program',
-              },
+              }
             ],
           },
           {

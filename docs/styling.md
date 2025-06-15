@@ -2,14 +2,14 @@
 title: Use Cases
 ---
 
-The **Open Data Portal** is designed to support a comprehensive variety of **use cases** that facilitate **data governance**, **quality assurance**, and **analytical exploration**. These use cases reflect the core functional interactions enabled by the system architecture, promoting **transparency**, **accessibility**, and **analytical insight** over publicly available datasets.
+The **Open Data Portal** is designed to support a comprehensive variety of **use cases** that facilitate **data governance**, **quality assurance**, and **analytical exploration**. These use cases reflect the core functional interactions enabled by the system architecture, promoting **transparency** 🔍, **accessibility** 🌐, and **analytical insight** 📊 over publicly available datasets.
 
 ![Use Case Diagram](./UseCase.webp)
 
-### Main Actors
+### Main Actors 👥
 
 - **Administrator** — Oversees user management, dataset review, and data quality enforcement across the platform.
-- **Data Provider** — Responsible for uploading and maintaining data, ensuring accuracy and compliance with platform standards.
+- **Data Provider** — Responsible for uploading and maintaining data, ensuring accuracy and compliance with platform standards. 
 - **Data Scientist** — Engages in analysis, exploration, and insight generation based on available datasets.
 
 ---
@@ -100,11 +100,11 @@ Users can view complete dataset information including descriptions, quality metr
 
 ## Actor Summary
 
-### • Administrator  
+### • Administrator 
 Oversees platform operations by managing user accounts, reviewing data submissions, and moderating data quality. Duties include flagging/removing invalid data, auditing metadata, and monitoring user activity.
 
-### • Data Scientist  
+### • Data Scientist 
 Interacts with published data for analytical and exploratory tasks. Responsibilities include downloading data, detecting outliers, analyzing metadata, and contributing derived insights for curation and decision-making.
 
-### • Data Provider  
+### • Data Provider 
 Primarily responsible for uploading and maintaining datasets. Ensures data is accurate, complete, and adheres to schema/provenance rules. May enhance datasets with additional metadata and verify data integrity.

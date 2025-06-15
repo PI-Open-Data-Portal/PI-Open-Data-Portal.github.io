@@ -582,7 +582,7 @@ function Home() {
         </div>
         <div className="text-center"> {/* Centraliza o conteúdo */}
           <h4 className="text-xl font-semibold text-gray-900">Bruno Tavares</h4>
-          <p className="mt-2 text-base text-gray-600">Aluno</p>
+          <p className="mt-2 text-base text-gray-600">DevOps</p>
         </div>
       </div>
 
@@ -597,7 +597,7 @@ function Home() {
         </div>
         <div className="text-center"> {/* Centraliza o conteúdo */}
           <h4 className="text-xl font-semibold text-gray-900">Diogo Costa</h4>
-          <p className="mt-2 text-base text-gray-600">Aluno</p> 
+          <p className="mt-2 text-base text-gray-600">Product Owner</p> 
         </div>
       </div>
 
@@ -612,7 +612,7 @@ function Home() {
         </div>
         <div className="text-center"> {/* Centraliza o conteúdo */}
           <h4 className="text-xl font-semibold text-gray-900">André Alves</h4>
-          <p className="mt-2 text-base text-gray-600">Aluno</p>
+          <p className="mt-2 text-base text-gray-600">Architect</p>
         </div>
       </div>
 
@@ -627,7 +627,7 @@ function Home() {
         </div>
         <div className="text-center"> {/* Centraliza o conteúdo */}
           <h4 className="text-xl font-semibold text-gray-900">Francisco Pinto</h4>
-          <p className="mt-2 text-base text-gray-600">Aluno</p>
+          <p className="mt-2 text-base text-gray-600">Team Manager</p>
         </div>
       </div>
 
@@ -642,7 +642,7 @@ function Home() {
         </div>
         <div className="text-center"> {/* Centraliza o conteúdo */}
           <h4 className="text-xl font-semibold text-gray-900">Pedro Rei</h4>
-          <p className="mt-2 text-base text-gray-600">Aluno</p>
+          <p className="mt-2 text-base text-gray-600">DB Master</p>
         </div>
       </div>
 

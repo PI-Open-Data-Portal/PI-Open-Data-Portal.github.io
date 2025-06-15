@@ -19,36 +19,27 @@ export default {
     {
       type: 'category',
       label: 'Project Concept',
-      items: ['docsearch-v3', 'api', 'styling', 'migrating-from-v2'],
+      items: ['docsearch-v3', 'api', 'styling', 'migrating-from-v2', 'userStory'],
+    },
+    {
+      type: 'category',
+      label: 'M1',
+      items: ['context_goals', 'results_timeline_comms', 'figma'],
     },
     {
       type: 'category',
       label: 'M2',
-      items: ['record-extractor', 'templates', 'manage-your-crawls'],
+      items: ['m2x', 'm2z'],
     },
     {
       type: 'category',
       label: 'M3',
-      items: [
-        {
-          type: 'category',
-          label: 'Context',
-          items: ['crawler', 'docsearch-program'],
-        },
-        {
-          type: 'doc',
-          id: 'tips',
-        },
-        {
-          type: 'doc',
-          id: 'integrations',
-        },
-      ],
+      items: ['concept_architecture', 'implementation_demos_future'],
     },
     {
       type: 'category',
-      label: 'Coming Soon',
-      items: ['how-does-it-work', 'required-configuration'],
-    },
+      label: 'M4',
+      items: ['m4x', 'm4z'],
+    }
   ],
 };
