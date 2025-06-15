@@ -1,12 +1,59 @@
 ---
-title: Problemas a resolver
+title: Personas and Scenarios
 ---
 
-Multiple data source with different results (Dependendo que quem faz a publicação de dados pode haver diferenças na sua nomenclatura como por exemplo o nome das empresas ou de produtos, o que gera problemas ao realizar estatísticas sobre os dados pois pode resultar em conclusões diferentes à realidade.
+## Persona 1: Carlos Nogueira – IT Administrator
 
-Inconsistency in data points(por exemplo aqueles id em que alguns estão na descrição de transporte já outros preenchem no sítio devido o que pode criar confusão pois também existem situações que que ambos estão preenchidos com ids diferentes).
+![Carlos Nogueira](https://randomuser.me/api/portraits/men/75.jpg)  
+**Name:** Carlos Nogueira  
+**Age:** 42  
+**Sex:** Male  
+**Profession:** Database Engineer  
 
-Elementos duplicados: Uma base de dados com grandes dimensões, pode conter dados duplicados, causados por erros humanos na sua inserção e falhas no controle de qualidade. Isto leva ao sobrecarregamento do sistema e reduz a eficiência operacional. O processo de remoção de dados duplicados é geralmente efetuado com recurso a  softwares, que identificam dados duplicados e substituem as cópias que tanto podem ser executados no momento de inserção dos dados ou quando estes já estão armazenados na base de dados.
+**Scenario:** Carlos, acting as the IT administrator, wants to create a new user account so that the user can interact with the Open Data Portal.
 
-Missing data(Em alguns data points há elementos em falta )
-O problema mais geral para resolver é a estrutura da base de dados em si ,criar tabelas bem estruturadas,views, índices para agilizar o processo de adicionar e obter conteúdo da base de dados.
+- Logs into the system and accesses the user management section.  
+- Fills in a form with the new user's information.  
+- Assigns the appropriate permissions.  
+- Sends an invitation email via the system.  
+- The user activates their account.  
+- Carlos verifies the account status.
+
+---
+
+## Persona 2: Mariana Costa – Data Scientist
+
+![Mariana Costa](https://randomuser.me/api/portraits/women/65.jpg)  
+**Name:** Mariana Costa  
+**Age:** 39  
+**Sex:** Female  
+**Profession:** Senior Data Scientist  
+
+**Scenario:** Mariana needs to analyze data to improve logistics efficiency across various ports.
+
+- Logs into the portal.  
+- Browses available datasets.  
+- Downloads relevant data.  
+- Filters and selects important features.  
+- Applies clustering algorithms to detect outliers.  
+- Exports the processed data.  
+- Compiles and reports her analysis.
+
+---
+
+## Persona 3: Tiago Mendes – Data Provider
+
+![Tiago Mendes](https://randomuser.me/api/portraits/men/32.jpg)  
+**Name:** Tiago Mendes  
+**Age:** 35  
+**Sex:** Male  
+**Profession:** Logistics Analyst  
+
+**Scenario:** Tiago is responsible for uploading cargo manifests to the platform.
+
+- Logs into the platform.  
+- Navigates to the upload section.  
+- Fills out the metadata fields.  
+- Uploads the dataset.  
+- Verifies correct data insertion.  
+- Ensures metadata compliance with platform requirements.

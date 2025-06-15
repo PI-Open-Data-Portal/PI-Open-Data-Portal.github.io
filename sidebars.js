@@ -18,7 +18,7 @@ export default {
     },
     {
       type: 'category',
-      label: 'M1',
+      label: 'Project Concept',
       items: ['docsearch-v3', 'api', 'styling', 'migrating-from-v2'],
     },
     {

@@ -38,7 +38,3 @@ The project will focus on the **Port of Sines Administration’s Port Management
 - **Delta Lake**: A storage layer for managing data in distributed environments, including both relational and NoSQL databases.
 - **Data Visualization**: The platform will present data in a user-friendly manner using tables, graphs, and dashboards.
 
-## Contact Information
-
-- **José Moreira**: jose.moreira@ua.pt
-- **Paulo Pintor**: paulopintor@ua.pt

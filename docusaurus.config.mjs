@@ -23,15 +23,12 @@ export default {
         docs: {
           path: 'docs',
           sidebarPath: 'sidebars.js',
-          editUrl: 'https://github.com/PI-Open-Data-Portal/PI-Open-Data-Portal.github.io/edit/main/',
           versions: {
             current: {
               label: 'current',
             },
           },
           lastVersion: 'current',
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
